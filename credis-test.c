@@ -57,7 +57,7 @@ long timer(int reset)
 
 
 int main(int argc, char **argv) {
-  REDIS *redis = credis_connect(NULL, 0, 2000);
+  REDIS redis = credis_connect(NULL, 0, 2000);
   int rc, valc;
   char *val, **valv;
   char buf[200];
